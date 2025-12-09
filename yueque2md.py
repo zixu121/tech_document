@@ -7,6 +7,13 @@ yuque_cdn_domain = 'cdn.nlark.com'
 output_content = []
 image_file_prefix = 'image-'
 
+"""
+run command: 
+arguments:[0]
+[1] : fileName
+[2] : mardownload same name folder, and include markdown file
+python yueque2md.py FastAPI
+"""
 def main():
     fileName = sys.argv[1] + '.md'
     filepath = '/Users/admin/Downloads/' + sys.argv[1] + "/"
