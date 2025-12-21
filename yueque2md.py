@@ -15,10 +15,13 @@ arguments:[0]
 python yueque2md.py FastAPI
 """
 def main():
+    core_file_path = '/Users/admin/Downloads/'
     fileName = sys.argv[1] + '.md'
-    filepath = '/Users/admin/Downloads/' + sys.argv[1] + "/"
+    filepath = core_file_path + sys.argv[1] + "/"
+    mkdir(filepath)
     # origin_md_path = sys.argv[1]
     origin_md_path = filepath + fileName
+    os.rename(core_file_path + fileName, origin_md_path)
     # output_md_path = sys.argv[2]
     output_md_path = filepath + "new_" + fileName
     # image_dir = sys.argv[3]
@@ -34,16 +37,18 @@ def main():
     os.remove(origin_md_path)
     print('删除语雀导出的原始文件成功')
     # 重命名文件
+    print('准备重命名文件{}'.format(fileName))
     os.rename(output_md_path, origin_md_path)
+    print('重命名文件成功')
 
 
-def mkdir(image_dir):
-    isExists = os.path.exists(image_dir)
+def mkdir(dir):
+    isExists = os.path.exists(dir)
     if isExists:
-        print('图片存储目录已存在')
+        print(f'{dir}存储目录已存在')
     else:
-        os.makedirs(image_dir)
-        print('图片存储目录创建成功')
+        os.makedirs(dir)
+        print(f'{dir}存储目录创建成功')
 
 
 def handler(origin_md_path, output_md_path, image_dir, image_url_prefix, image_rename_mode):
