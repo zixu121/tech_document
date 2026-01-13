@@ -1,5 +1,6 @@
 # LlamaIndex介绍
-![](./images/1766295919829-286f2e9b-50b0-4cc7-bcee-448fe94605a4.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309061874-6ddb7353-cab4-4604-9a6e-2eec6301997f.png)
 
 ** 一句话解释**
 
@@ -205,7 +206,8 @@ if __name__ == "__main__":
 3. IT运维：故障自动上报、分派、解决。
 4. 客户服务：投诉工单的流转与处理。
 
-![](./images/1766295919913-66a22963-ce20-4cb2-8829-7c6ac91e9361.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309061873-f63edf25-c1d9-46ed-b4cc-711639c9d040.png)
 
 ```python
 from llama_index.core.workflow import (
@@ -250,7 +252,8 @@ draw_all_possible_flows(MyWorkflow, filename="basic_workflow.html")
 
 这将在当前目录中创建一个名为 的文件`basic_workflow.html`。在浏览器中打开它，即可看到工作流程的交互式可视化表示。它看起来应该像这样：
 
-![](./images/1766295919724-81eb93cd-d81e-4c04-886f-f88231f02d1a.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309061954-e7a39528-9460-4a1d-9272-da5a172d6ea2.png)
 
 # LlamaIndex基本概念
 LLM 是在海量数据上进行训练的，但它们并非基于**你的**数据进行训练。检索增强生成 (RAG) 通过将你的数据添加到 LLM 已有的数据中来解决此问题。你会经常看到对 RAG 的引用。查询引擎、聊天引擎和代理通常使用 RAG 来完成其任务。
@@ -259,7 +262,8 @@ LLM 是在海量数据上进行训练的，但它们并非基于**你的**数据
 
 即使您正在构建的是聊天机器人或代理，您也需要了解将数据导入应用程序的 RAG 技术。
 
-![](./images/1766295919696-ef074479-b08f-45d6-be3a-a2eb7f6d6589.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309061944-ef4ec021-3458-4932-b120-8ab118098ec2.png)
 
 **RAG 内的阶段:**
 
@@ -271,7 +275,8 @@ RAG 包含五个关键阶段，它们也将成为您构建的大多数大型应�
 + **查询**：对于任何给定的索引策略，您可以通过多种方式利用 LLM 和 LlamaIndex 数据结构进行查询，包括子查询、多步骤查询和混合策略。
 + **评估**：任何流程中的关键步骤是检查其相对于其他策略的有效性，或检查何时进行更改。评估可以客观衡量您对查询的响应的准确性、可靠性和速度。
 
-![](./images/1766295919753-78e5d0bd-c5ee-4505-9501-bfbb342d7a22.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309061833-e5c51afb-548c-4f22-8269-47c55e5b54e6.png)
 
 **结论：**我们可以使用LlamaIndex帮助我们更轻松地处理、索引和查询大量的非结构化数据（如文档、网页内容、电子邮件等），并通过自然语言处理技术来提供智能查询和检索功能
 
@@ -646,7 +651,8 @@ nodes = parser.get_nodes_from_documents(documents)
 print(nodes)
 ```
 
-![](./images/1766295971178-160f958f-f89a-40b2-adf9-26094e66275d.png)
+<!-- 这是一张图片，ocr 内容为：DOCUMENT NODE1 NODE2 NODE3 NODE4 NODE5 -->
+![](./images/1768309145078-eb14a174-aecd-428d-88ce-34bd7d7ee7f3.png)
 
 手动构建节点
 
@@ -785,9 +791,11 @@ if __name__ == '__main__':
 
 会发现没有JSON格式的读取器，这时候就去[LlamaHub](https://llamahub.ai/)，搜索JSON格式的读取器。
 
-![](./images/1766295920237-2d790d0a-6101-423c-a15a-9f339ed6f4fd.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309062745-bdddeffa-4268-4552-9f03-52553657928a.png)
 
-![](./images/1766295920332-5729c082-5562-4f37-9b03-1c703886aeea.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063001-f97f291b-f83c-4d61-8ee0-a7b525a8dff3.png)
 
 最简单就是传递一个目录，`SimpleDirectoryReader`会读取目录下所有支持的文件
 
@@ -911,13 +919,15 @@ https://llamahub.ai/?tab=all
 
 这个网址就是一个开源的存储库，里面就包含加载器。
 
-![](./images/1766295920336-52c2f03c-cc22-476a-84d2-8f0441645377.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309062987-2fa0cb8f-4106-4e7e-92ec-dcf319848611.png)
 
 可以直接点击按照文档进行使用
 
 比如使用JSON加载器
 
-![](./images/1766295920478-a92d626a-80d3-448b-89b5-63d3fce53211.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309062998-f0b5ab26-53f8-4d7f-9881-0e93048ec2c2.png)
 
 ```plain
 from llama_index.readers.json import JSONReader
@@ -1113,6 +1123,14 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 documents = SimpleDirectoryReader(input_files=['../data/小说.txt']).load_data()
 
 embed_model = HuggingFaceEmbedding(model_name="D:\\llm\\Local_model\\BAAI\\bge-large-zh-v1___5")
+"""
+buffer_size=考虑的上下文窗口大小,
+breakpoint_percentile_threshold=决定"在哪里切分文本"的阈值，
+举例说明：
+如果文档中有 100 个可能的切分点，设置为 95 意味着只会在语义变化最剧烈的 5 个位置进行切分
+值越高（如 99）→ 切分点越少，每块文本更长
+值越低（如 80）→ 切分点越多，每块文本更短
+"""
 splitter = SemanticSplitterNodeParser(
     buffer_size=1, breakpoint_percentile_threshold=95, embed_model=embed_model
 )
@@ -1144,7 +1162,8 @@ print(nodes)
 #### 层次节点解析器：
 这种节点解析器将节点划分为层次结构，从而从单一输入中产生不同块大小的多个层次结构。每个节点都包含对其父节点的引用。（通过node_id进行父子之间的关联）能够保留文档逻辑结构的场景
 
-![](./images/1766295944172-bb9bbc6d-93a5-493b-abdb-2ce72fd31ea0.png)
+<!-- 这是一张图片，ocr 内容为：叶节点指的是最小的节点 根据2048的父文档进行切分的子文档1 根据2048的父文档进行切分的子文档2 根据2048的父文档进行切分的子文档3 根据2048的父文档进行切分的子文档4 根据2048的父文档进行切分的子文档5 2048的父文档 -->
+![](./images/1768309106175-840aa944-1d76-43e6-a96f-a04cec86d139.png)
 
 ```plain
 from llama_index.core.node_parser import HierarchicalNodeParser
@@ -1215,9 +1234,11 @@ for node in base_nodes_returned:
 ### 摄取管道
 `IngestionPipeline` 是 LlamaIndex 提供的 自动化文档处理流水线，将数据加载、清洗、分割、嵌入、存储等步骤封装为可配置的模块化流程，专为 RAG（检索增强生成）系统设计。
 
-![](./images/1766295920453-65f66902-d0c1-4d3b-af0b-35dde01d7a5c.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063079-c8b76cbf-8d69-435e-b8a4-89b9ac6e0008.png)
 
-![](./images/1766295990582-6f6452c9-a29e-4c6f-b76f-5039326f701b.png)
+<!-- 这是一张图片，ocr 内容为：汉堡制作 准备番茄-洗净-切片 和面烤面包 买牛肉饮成肉饼 准备生菜洗净 用户购买 组装汉堡 准备番茄-洗净切片 买牛肉饭成肉饼 准备生菜洗净 和面~烤面包 准备50份 准备50份 准备50份 准备50份 摄权管道(汉堡制作) -->
+![](./images/1768309126235-f7785798-ff3b-40e7-9e29-448d3343cf63.png)
 
 可以使用的变化包括：
 
@@ -1404,11 +1425,13 @@ print(retriever.retrieve("萧薰儿的斗气是多少？"))
 
 打开docker官网：https://www.docker.com/，选择合适自己版本的安装包下载
 
-![](./images/1766295920855-529c63d9-3d43-4db2-99a9-9435d93a911e.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063434-6c318942-4b7c-4624-8988-e29cf22eba7a.png)
 
 进入docker桌面端之后，在上方的搜索栏中输入redis-stack，选择下方图所对应的版本
 
-![](./images/1766295920954-9bd17f89-2757-4150-a236-6cf0f4703b44.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063677-d2cf487c-edab-466a-8ae1-33ebfb675e6d.png)
 
 或者使用docker命令进行下载
 
@@ -1851,7 +1874,8 @@ print(index.as_retriever().retrieve("deepseek的公司收益？"))
 ### 属性图索引
 属性图索引(Property Graph Index)是一种基于图结构的高级索引技术，它将文档内容表示为具有属性的节点和边的图形结构。
 
-![](./images/1766295921012-a2db805a-87e3-4424-b40f-d2ae14a3458b.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063726-5515c2a3-03f3-425a-b987-2e7109982c00.png)
 
 #### **基本概念：**
 **属性图索引**将传统的文档检索转换为图数据库的形式：
@@ -2061,7 +2085,7 @@ def get_deepseek_llm(model: str = "deepseek-chat"):
     api_key = os.getenv("DEEPSEEK_API_KEY")
     api_base_url = os.getenv("DEEPSEEK_BASE_URL")
 
-    # LlamaIndex默认使用的大模型被替换为百炼
+    # LlamaIndex默认使用的大模型被替换为DeepSeek
     llm = DeepSeek(model=model, api_key=api_key, api_base=api_base_url, is_chat_model=True)
     Settings.llm = llm
 
@@ -2822,7 +2846,8 @@ print(nodes)
 ## 存储
 LlamaIndex 提供了多种存储功能，用于持久化保存索引、文档、嵌入向量和检索结果，以便后续复用而无需重新计算。
 
-![](./images/1766295921055-152f215c-42f9-42c6-9373-2b4a2cdee1fb.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063790-0a011a37-6e1e-4726-a738-05f8efefa919.png)
 
 + **文档存储**：存储摄取的文档（即`Node`对象）的位置，
 + **索引存储**：存储索引元数据的地方，
@@ -3200,7 +3225,8 @@ print(new_kv_store.get_all())
 2. **查询处理** - 系统如何理解和处理问题
 3. **查询响应** - 系统返回的答案和相关信息
 
-![](./images/1766295921787-db2e36e0-34f8-48d7-acb8-09dad75b5f94.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309063828-dfc56ffe-134c-45e9-8514-1bb88b109621.png)
 
 ### 查询引擎
 查询引擎是一个通用接口，允许你对数据提问。查询引擎接收自然语言查询，并返回丰富的响应。它通常（但不总是）通过检索器构建在一个或多个索引之上。你可以组合多个查询引擎来实现更高级的功能
@@ -3725,7 +3751,8 @@ for node in nodes:
 #### 互惠重排序融合检索器
 重排序：
 
-![](./images/1766295921851-a912f266-77fb-4967-a3b2-0ecc4c1842e2.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309064200-10963235-72c1-4542-9064-8da176dbcbb1.png)
 
 `n` 是检索器的数量，`d`某个文档
 
@@ -3994,7 +4021,7 @@ synthesizer = get_response_synthesizer(
     streaming=True,
     # 如果想使用自定义的提示模板，
     text_qa_template=qa_prompt_tmpl,
-    summary_template=summary_prompt_template,
+    summary_template=summary_prompt_template, # 只有"tree_summarize"模式才需要摘要提示词
 )
 response = synthesizer.synthesize(query="请总结会员等级制度的演变过程。", nodes=retriever.retrieve("请总结会员等级制度的演变过程。"))
 print(response)
@@ -4009,7 +4036,8 @@ print(response)
 
 # 工作流
 ## llamaIndex中RAG工作流结构
-![](./images/1766296012134-1ecb69b8-d480-4135-95ca-3f3a9ed79322.png)
+<!-- 这是一张图片，ocr 内容为：<例如:PDF,网页,数据库,API,MARKDOWN,N 数据源 ,NOTION等 加载并转换为DOCUMENT对象 DOCUMENTLOADER 将大文本切分为小的片段(NODE) TEXTSPLITTER 解析文档为带有元数据的NODE NODEPARSER 个 INDEX构建器 向量索引,关键词索引,列表索引等 RETRIEVER 输入问题,找出相关节点(上下文) RESPONSE 利用LLM整合节点,生成最终回答 SYNTHESIZER 整合RETRIEVER+SYNTHESIZER的接口 QUERY ENGINE 个 用户最终看到的答案 返回结果 -->
+![](./images/1768309159719-abe19409-5abe-47f2-a73e-787ea2350fdd.png)
 
 ## @step
 @step装饰器将普通的异步函数转换为工作流中的一个节点。
@@ -4262,7 +4290,8 @@ asyncio.run(main())
 ```
 
 ## 等待多个事件
-![](./images/1766296024380-4a35f93e-488d-46e1-9ceb-4a68775190d7.png)
+<!-- 这是一张图片，ocr 内容为：前端 项目经理对接完 产品经理完成原 测试 UI 型图 成需求 等待多个事件:测试人员会等待前端,UI,后 后端 端工作都完成之后才能进行测试 -->
+![](./images/1768309176424-8a26b85b-8eab-494a-8918-ea90de7dfaf7.png)
 
 上下文不仅仅保存数据，它还提供缓冲和等待多个事件的实用程序。
 
@@ -5113,7 +5142,8 @@ LlamaDeploy（原名`llama-agents`）是一个异步优先的框架，用于部�
 
 简单来说：LlamaDeploy 是一个分布式的、基于微服务架构的部署平台，它允许开发者轻松地将复杂的 AI 工作流转换为可扩展的生产级服务。它的核心目标是简化从开发到生产的部署过程，让 AI 应用能够稳定地运行在生产环境中。
 
-![](./images/1766295921823-0073b450-d08f-4437-980b-2d2a1e0da44d.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309064585-372dd6a5-d007-43e5-ac18-fb18c5003ac3.png)
 
 ```plain
 pip install llama_deploy==0.9.0
@@ -5219,9 +5249,11 @@ llamactl run --deployment QuickStart --arg message 'Hello from my shell!'
 7.打开一个新的cmd窗口进行测试：llamactl run --deployment rag-deploy --arg file_path "D:\llm\LLMProject\LlamaIndex\data\小说.txt" --arg query "萧炎的爸爸是谁？"
 ```
 
-![](./images/1766295921877-be48ff3e-e5ce-41a6-81a1-495549efdcbb.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309064764-11883ba6-180b-46dc-92e7-2cf0e05f8a4f.png)
 
-![](./images/1766295922051-901c858e-5e6b-4ffa-b748-9fba9515cb51.png)
+<!-- 这是一张图片，ocr 内容为： -->
+![](./images/1768309064887-35015802-867d-4dc0-a482-8f215af1912c.png)
 
 对应代码和配置
 

@@ -11,8 +11,8 @@ image_file_prefix = 'image-'
 run command: 
 arguments:[0]
 [1] : fileName
-[2] : mardownload same name folder, and include markdown file
-python yueque2md.py FastAPI
+[2] : mardownload filename which under the /Downloads/
+python yueque2md.py LlamaIndex框架
 """
 def main():
     core_file_path = '/Users/admin/Downloads/'
